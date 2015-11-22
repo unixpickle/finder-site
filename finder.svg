@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 900 500">
+
+  <defs>
+    <filter id="drop-shadow">
+      <feOffset in="SourceGraphic" result="offsetOut" dx="0" dy="15" />
+      <feGaussianBlur in="offsetOut" result="blurOut" stdDeviation="15" />
+    </filter>
+    <linearGradient id="header-gradient" y1="0%" y2="100%" x1="0%" x2="0%">
+      <stop stop-color="#ebebeb" offset="0%" />
+      <stop stop-color="#d5d5d5" offset="100%" />
+    </linearGradient>
+    <path id="window-shape"
+          d="M50,50 m0,4 a4,4 0 0 1 4,-4 h792 a4,4 0 0 1 4,4 v400
+             a4,4 0 0 1 -4,4 h-792 a4,4 0 0 1 -4,-4 z" />
+  </defs>
+
+  <use id="shadow" xlink:href="#window-shape" filter="url(#drop-shadow)"
+       fill="black" fill-opacity="0.45" />
+
+  <use id="content-background" xlink:href="#window-shape"
+       fill="#f6f6f6" />
+
+  <path id="header-background" fill="url(#header-gradient)"
+        stroke="#7d7d7d" stroke-width="1" stroke-opacity="0"
+        d="M50,50 m0,4 a4,4 0 0 1 4,-4 h792 a4,4 0 0 1 4,4 v60
+           h-800 z" />
+
+  <path id="header-separator" fill="#969696" d="M50,114, h800 v1 h-800 z" />
+
+  <use id="content-border" xlink:href="#window-shape"
+       transform="translate(-0.5 -0.5) scale(1.00125 1.0024509804)"
+       fill="none" stroke="black" stroke-width="1" stroke-opacity="0.09" />
+
+  <!-- Window control buttons -->
+  <circle cx="64" cy="61" fill="#ff5f58" r="6" stroke="#e1463f" stroke-width="1" />
+  <circle cx="84" cy="61" fill="#ffbd2d" r="6" stroke="#dfa022" stroke-width="1" />
+  <circle cx="104" cy="61" fill="#28c53e" r="6" stroke="#1aab2b" stroke-width="1" />
+
+</svg>

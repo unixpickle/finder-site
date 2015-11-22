@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Finder Page</title>
+    <meta name="viewport" content="width=900">
+    <style type="text/css">
+    #fancy-page {
+      box-sizing: border-box;
+      padding: 0 10px;
+    }
+    #pentagon-background {
+      background-color: #65bcd4;
+    }
+    </style>
+    <script src="window.js"></script>
+    <script type="text/javascript">
+    window.addEventListener('load', function() {
+      document.body.style.display = '';
+      var w = new window.FinderWindow();
+      w.swallowBody();
+      document.body.appendChild(w.element());
+    });
+    </script>
+    <script src="pentagons.js"></script>
+  </head>
+  <body style="display: none">
+    <div id="fancy-page" style="box-sizing: border-box; padding: 0 10px">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus interdum egestas. Fusce condimentum neque ac felis rutrum, sed scelerisque quam tincidunt. Etiam pulvinar, ante eu pharetra ullamcorper, nunc ipsum consequat ipsum, nec pharetra magna magna gravida nulla. Integer pharetra dui ac eros dignissim finibus. Phasellus nec velit sapien. Pellentesque ullamcorper pharetra fringilla. Nulla facilisi. Donec in nibh risus. Phasellus gravida dui lobortis eros scelerisque condimentum. Proin leo ligula, imperdiet semper ultrices at, gravida finibus augue. Cras sit amet tellus est. Nullam interdum imperdiet nisl eu efficitur.</p>
+
+      <p>Aenean blandit libero augue, in fermentum ipsum pellentesque sed. Curabitur sed nulla et enim fringilla tincidunt. Nullam ut ipsum sit amet orci eleifend sagittis non nec lacus. Vestibulum congue imperdiet risus, ut scelerisque tellus fringilla nec. Nullam consectetur convallis dui vitae egestas. Curabitur non ullamcorper leo. Donec pretium non nulla non vehicula. Nulla faucibus tortor pharetra lacus mollis, at aliquet sem dignissim. Pellentesque consectetur laoreet tortor, et elementum ligula blandit ut. Nullam gravida velit odio, eget tristique dui sollicitudin quis. Etiam tincidunt venenatis urna a ultrices. Nulla pellentesque lacinia hendrerit.</p>
+      
+      <center><img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Augustus_Aureus_infobox_version.png"></center>
+
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque tempus eros in nisl euismod mattis. Fusce ac venenatis nisi, sit amet sollicitudin ante. In vitae suscipit diam, ut fringilla ligula. Praesent ut vestibulum nulla. Donec eu consectetur lorem. Praesent eu tellus aliquam, accumsan purus vel, maximus neque.</p>
+
+      <p>Fusce faucibus finibus nisi, nec sollicitudin dui. Nam fringilla, ante nec blandit malesuada, magna risus consectetur est, at laoreet felis nulla ac libero. Praesent vulputate augue vel erat pellentesque, nec pellentesque dolor maximus. Nunc dapibus lorem eu turpis eleifend, et aliquet lacus ultricies. Donec eget aliquam neque. Donec pretium auctor ex ac tempor. Nulla varius fermentum odio eget varius. Aliquam ex elit, aliquet sed mattis vel, hendrerit ac dolor. Suspendisse scelerisque mi at pharetra hendrerit. Etiam feugiat placerat tincidunt. Nulla a lacinia mauris, sed feugiat eros. Mauris rhoncus, ipsum a blandit semper, leo tellus tincidunt lorem, quis luctus purus sem at nisi.</p>
+
+      <p>Donec bibendum enim a metus laoreet euismod. Mauris auctor dolor non leo gravida, ut ullamcorper ligula suscipit. Phasellus volutpat neque vel posuere efficitur. Mauris scelerisque lacinia quam, et rutrum sem mollis in. Etiam semper, eros quis iaculis iaculis, leo leo aliquet urna, quis semper augue neque a purus. Pellentesque pretium nunc non convallis bibendum. Nunc pellentesque, mi a semper semper, magna felis malesuada magna, eu commodo sapien lectus eget nulla. Cras maximus augue in vulputate ultrices. Phasellus a efficitur mauris.</p>
+    </div>
+  </body>
+</html>
